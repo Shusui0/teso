@@ -1,0 +1,38 @@
+traffic-violation-system
+├── backend
+│   ├── src
+│   │   ├── controllers
+│   │   │   ├── violation.controller.ts
+│   │   │   └── index.ts
+│   │   ├── models
+│   │   │   ├── violation.model.ts
+│   │   │   └── index.ts
+│   │   ├── routes
+│   │   │   ├── violation.routes.ts
+│   │   │   └── index.ts
+│   │   ├── services
+│   │   │   ├── detection.service.ts
+│   │   │   └── index.ts
+│   │   ├── utils
+│   │   │   └── index.ts
+│   │   ├── config.ts
+│   │   └── app.ts
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── README.md
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   │   ├── Map.tsx
+│   │   │   ├── ViolationCard.tsx
+│   │   │   └── FileUpload.tsx
+│   │   ├── services
+│   │   │   └── api.ts
+│   │   ├── types
+│   │   │   └── index.ts
+│   │   ├── App.tsx
+│   │   └── index.tsx
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── README.md
+└── README.md
