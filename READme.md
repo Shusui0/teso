@@ -23,7 +23,7 @@ AI/ML: YOLOv8, OpenCV, TensorFlow
 
 Backend: Python (Flask / FastAPI)
 
-Frontend: 
+Frontend: nextJS
 
 Database: Firebase / MongoDB
 
