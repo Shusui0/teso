@@ -1,0 +1,4 @@
+ultralytics==8.3.0
+opencv-python==4.8.1.78
+# Note: Download helmet.pt model from https://github.com/ultralytics/yolov5/releases/download/v7.0/helmet.pt
+# or train your own helmet detection model

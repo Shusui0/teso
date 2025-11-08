@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  aadhar    String?
+  license   String?
+  address   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  reports   Report[]
+}
+
+model Report {
+  id            String   @id @default(cuid())
+  userId        String
+  violationType String
+  vehiclePlate  String?
+  location      String
+  description   String?
+  fileUrl       String?
+  aiResults     Json?
+  status        String   @default("reported")
+  severity      String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
